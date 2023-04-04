@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    
+    <script src="script6.js"></script>
+    
     <style>
         h1,
         h2,
@@ -26,39 +29,42 @@
         hr {
             opacity: 0;
         }
+
+        div {
+            border-radius: 3px;
+        }
     </style>
 </head>
 
 <body class="w3-light-grey">
 
-    <!-- Navigation bar with social media icons -->
     <div class="w3-bar w3-hide-small">
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-brands fa-spotify"
+                onclick="parent.open('https://open.spotify.com/artist/63yrD80RY3RNEM2YDpUpO8')"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-brands fa-apple"
+                onclick="parent.open('https://music.apple.com/br/artist/melanie-martinez/993014053')"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-brands fa-deezer"
+                onclick="parent.open('https://www.deezer.com/br/artist/5518450')"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-brands fa-soundcloud"
+                onclick="parent.open('https://soundcloud.com/melaniemartinezmusic')"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fab fa-instagram"
+                onclick="parent.open('https://www.instagram.com/littlebodybigheart/?hl=pt')"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fab fa-twitter"
+                onclick="parent.open('https://twitter.com/MelanieLBBH')"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
     </div>
 
-    <!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
     <div class="w3-content" style="max-width:1600px">
 
-        <!-- Header -->
         <header class="w3-container w3-center w3-padding-20" style="background-color: lightgray;">
             <h1 class="w3-xxxl"><b>CONHEÇA A TRILOGIA DA MELANIE MARTINEZ</b></h1>
-            <h6>Os álbuns de estúdio</h6>
+            <h6>Os conceitos por trás dos álbuns de estúdio da cantora</h6>
         </header>
 
-        <!-- Grid -->
         <div class="w3-row w3-padding w3-border" style="background-image: linear-gradient(#1c4eaf, #ba9693, #161c10);">
 
-            <!-- Blog entries -->
             <div class="w3-col l8 s12">
 
-                <!-- CRY BABY -->
                 <div class="w3-container w3-white w3-margin w3-padding-large">
                     <div class="w3-center">
                         <h3>CRY BABY</h3>
@@ -146,16 +152,12 @@ and is wrapped around the whole page content, except for the footer in this exam
                                         class="fa fa-brands fa-spotify"></i> Ouvir álbum</b></button></p>
                     </div>
                 </div>
-
-                <!-- END BLOG ENTRIES -->
             </div>
 
-            <!-- About/Information menu -->
             <div class="w3-col l4">
-                <!-- About Card -->
                 <div class="w3-white w3-margin">
                     <div class="w3-container w3-black">
-                        <h4>Sobre</h4>
+                        <h4>Sobre a Melanie Martinez</h4>
                     </div>
                     <div class="w3-container w3-white w3-justify w3-padding-16">
 
@@ -185,7 +187,6 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
                 <hr>
 
-                <!-- Subscribe -->
                 <div class="w3-white w3-margin">
                     <div class="w3-container w3-padding w3-black">
                         <h4>Inscreva-se</h4>
@@ -198,17 +199,10 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 class="w3-button w3-block w3-red">Inscrever-me</button></p>
                     </div>
                 </div>
-
-                <!-- END About/Intro Menu -->
             </div>
-
-            <!-- END GRID -->
         </div>
-
-        <!-- END w3-content -->
     </div>
 
-    <!-- Subscribe Modal -->
     <div id="subscribe" class="w3-modal w3-animate-opacity">
         <div class="w3-modal-content" style="padding:32px">
             <div class="w3-container w3-white">
@@ -220,15 +214,13 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="w3-container" style="background-color: lightgray; padding:32px">
-        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom" style="border-radius: 3px;"><i
                 class="fa fa-arrow-up w3-margin-right"></i>Voltar para o topo</a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+        <p>Turbinado por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <p>Escrito por <a href="https://github.com/axthur" target="_blank">axthur</a></p>
     </footer>
-
-    <script src="script6.js"></script>
-
 </body>
 
 </html>
